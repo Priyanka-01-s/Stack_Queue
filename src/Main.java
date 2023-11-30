@@ -15,5 +15,15 @@ public class Main {
             System.out.println("Peek: " + stack.peek());
             System.out.println("Pop: " + stack.pop());
         }
+
+        // Creating a queue with elements 56, 30, and 70
+        Queue queue = new Queue();
+        queue.enqueue(56);
+        queue.enqueue(30);
+        queue.enqueue(70);
+
+        // Displaying the queue
+        System.out.println("Queue after enqueue operations:");
+        queue.display();
     }
 }
