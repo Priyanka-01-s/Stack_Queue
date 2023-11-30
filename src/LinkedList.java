@@ -21,4 +21,14 @@ public class LinkedList {
 
         last.next = newNode;
     }
+
+    public int removeFront() {
+        if (head == null) {
+            throw new IllegalStateException("Queue is empty");
+        }
+
+        int data = head.data;
+        head = head.next;
+        return data;
+    }
 }

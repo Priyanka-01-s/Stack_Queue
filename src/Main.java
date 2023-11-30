@@ -25,5 +25,12 @@ public class Main {
         // Displaying the queue
         System.out.println("Queue after enqueue operations:");
         queue.display();
+
+        // Dequeuing
+        System.out.println("Dequeue: " + queue.dequeue());
+
+        // Displaying 
+        System.out.println("Queue after dequeue operation:");
+        queue.display();
     }
 }

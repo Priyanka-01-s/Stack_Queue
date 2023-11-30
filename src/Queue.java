@@ -9,6 +9,11 @@ public class Queue {
         linkedList.append(data);
     }
 
+    
+    public int dequeue() {
+        return linkedList.removeFront();
+    }
+
     public void display() {
         Node current = linkedList.head;
         while (current != null) {
