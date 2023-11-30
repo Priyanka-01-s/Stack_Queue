@@ -6,8 +6,14 @@ public class Main {
         stack.push(30);
         stack.push(56);
 
-        // Displaying the stack
+        // Displaying 
         System.out.println("Stack after push operations:");
         stack.display();
+
+		// Peeking and popping 
+        while (!stack.isEmpty()) {
+            System.out.println("Peek: " + stack.peek());
+            System.out.println("Pop: " + stack.pop());
+        }
     }
 }

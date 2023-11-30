@@ -17,4 +17,24 @@ public class Stack {
         }
         System.out.println("null");
     }
+
+    public int pop() {
+        if (linkedList.head == null) {
+            throw new IllegalStateException("Stack is empty");
+        }
+        int data = linkedList.head.data;
+        linkedList.head = linkedList.head.next;
+        return data;
+    }
+
+    public int peek() {
+        if (linkedList.head == null) {
+            throw new IllegalStateException("Stack is empty");
+        }
+        return linkedList.head.data;
+    }
+
+    public boolean isEmpty() {
+        return linkedList.head == null;
+    }
 }
